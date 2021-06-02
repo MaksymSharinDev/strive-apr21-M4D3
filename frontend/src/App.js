@@ -1,18 +1,15 @@
-import logo from './logo.svg';
 import './App.css';
-import {Container, Row, Col} from 'react-bootstrap'
 import MyBadge from './components/MyBadge';
 import WarningSign from './components/WarningSign'
-import SingleBook from './components/SingleBook'
 import BookList from "./components/BooksList";
-
+/*
 const MockBookObj = {
     "asin": "1250082757",
     "title": "Born of Vengeance: The League: Nemesis Rising",
     "img": "https://images-na.ssl-images-amazon.com/images/I/91J28bj3PYL.jpg",
     "price": 26.09,
     "category": "scifi"
-}
+}*/
 const BooksObjArr = [
     {
         "asin": "1940026091",
@@ -54,7 +51,7 @@ function App() {
                     color={"gray"}>
                 </MyBadge>
             </header>
-            <BookList books={BooksObjArr} > </BookList>
+            <BookList books={BooksObjArr}> </BookList>
         </div>
     );
 }

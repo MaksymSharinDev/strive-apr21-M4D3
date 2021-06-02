@@ -8,17 +8,35 @@ class BookList extends React.Component {
         this.props = props;
     }
 
+    state = {
+        q: '', qResult: []
+    }
+
+    filterBookList = (e) => {
+        this.setState({...this.state, q: e.target.value})
+
+    }
+
     render = () => {
         return (
             <Container>
                 <Row>
+                    <Input type={"text"} placeholder={"search"} onchange={this.filterBookList}/>
+                </Row>
+
+                <Row>
                     {this.props.books.map(x => (
-                        <Col xs={3}>
-                            <SingleBook book={x}/>
+                        {
+                        if ( this.state.qResult.length !== 0 ? qResult.contains(x.id) : true  ){
+                        return ( < Col xs = {3} >
+                        < SingleBook id = {x.id} book = {x}/>
                         </Col>)
-                    )
+                    }
+
+                        })
                     }
                 </Row>
+
             </Container>
         );
     }
