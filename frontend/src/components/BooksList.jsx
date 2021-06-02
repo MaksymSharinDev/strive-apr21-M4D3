@@ -23,22 +23,23 @@ class BookList extends React.Component {
                 <Row>
                     <Input type={"text"} placeholder={"search"} onchange={this.filterBookList}/>
                 </Row>
-
                 <Row>
-                    {this.props.books.map(x => (
-                        {
-                        if ( this.state.qResult.length !== 0 ? qResult.contains(x.id) : true  ){
-                        return ( < Col xs = {3} >
-                        < SingleBook id = {x.id} book = {x}/>
-                        </Col>)
-                    }
+                    <Loop>
+                        {animals.map((animal, index) => (
+                            <li key={index}>{animal}</li>
+                        ))}
+                    </Loop>
+                    {/*this.props.books.reduce(x => */}
+                    <if condition={this.state.qResult.length !== 0 ? qResult.contains(x.id) : true}>
+                        < Col xs={3}>
+                            < SingleBook id={x.id} book={x}/>
+                        </Col>
 
-                        })
-                    }
+                    </if>
                 </Row>
 
             </Container>
-        );
+        )
     }
 }
 
