@@ -1,0 +1,13 @@
+<mxfile host="Electron" modified="2021-06-02T13:01:46.330Z" agent="5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/14.6.13 Chrome/89.0.4389.128 Electron/12.0.7 Safari/537.36" etag="Xw6-9E7Mw6cpgIx9iadS" compressed="false" version="14.6.13" type="device">
+  <diagram id="NfP-XVPZcSdcYGOVhBCW" name="Page-1">
+    <mxGraphModel dx="1102" dy="773" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="2336" pageHeight="1654" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="F5tstXVs3diysl1EezMk-1" value="&lt;meta charset=&quot;utf-8&quot;&gt;&lt;li&gt;&#xa;        Create a component called WarningSign which receives some text as a&#xa;        prop. This text should be presented inside an Alert of type danger.&#xa;      &lt;/li&gt;&#xa;      &lt;li&gt;&#xa;        Create a component called MyBadge which receives a text and a color as&#xa;        props. This component should render a Badge react-bootstrap component&#xa;        with those properties.&#xa;      &lt;/li&gt;&#xa;      &lt;li&gt;&#xa;        Create a SingleBook component as a function. The component receives a&#xa;        book object as a prop, and displays the cover and the title of the book.&#xa;        Use react-bootstrap Cards to display a book (The book object can be read&#xa;        from one of the .json book files we gave you yesterday).&#xa;      &lt;/li&gt;&#xa;      &lt;li&gt;&#xa;        Create a BookList component. This component receives by props a list of&#xa;        books and displays them using the SingleBook component.&#xa;      &lt;/li&gt;&#xa;      &lt;li&gt;&#xa;        Create a FilterBookList feature. By writing into an input field a search&#xa;        query, the BookList should show only the books with the specified string&#xa;        into the title (save the query into the BookList component state and&#xa;        filter the books accordingly).&#xa;      &lt;/li&gt;&#xa;      &lt;li&gt;&#xa;        Convert your SingleBook component to a class, and create its state&#xa;        containing a &#39;selected&#39; boolean property.&#xa;      &lt;/li&gt;&#xa;      &lt;li&gt;&#xa;        Clicking on a SingleBook should toggle its &#39;selected&#39; state property. If&#xa;        the &#39;selected&#39; property is true, the SingleBook should have some styling&#xa;        that reflects that state change, visually.&#xa;      &lt;/li&gt;" style="text;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="40" y="80" width="420" height="480" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
